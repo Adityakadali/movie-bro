@@ -1,0 +1,99 @@
+{
+  "genres": [
+    {
+      "id": 28,
+      "name": "Action",
+      "image": "https://i.imgur.com/bG304YU.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Adventure",
+      "image": "https://i.imgur.com/IQSl5lg.jpg"
+    },
+    {
+      "id": 16,
+      "name": "Animation",
+      "image": "https://i.imgur.com/MY7Bva3.jpg"
+    },
+    {
+      "id": 35,
+      "name": "Comedy",
+      "image": "https://i.imgur.com/b9Dz742.jpg"
+    },
+    {
+      "id": 80,
+      "name": "Crime",
+      "image": "https://i.imgur.com/0BwSuLM.jpg"
+    },
+    {
+      "id": 99,
+      "name": "Documentary",
+      "image": "https://i.imgur.com/CrTP8Zf.jpg"
+    },
+    {
+      "id": 18,
+      "name": "Drama",
+      "image": "https://i.imgur.com/8dhE4mD.jpg"
+    },
+    {
+      "id": 10751,
+      "name": "Family",
+      "image": "https://i.imgur.com/I8AueRr.jpg"
+    },
+    {
+      "id": 14,
+      "name": "Fantasy",
+      "image": "https://i.imgur.com/JoI975x.jpg"
+    },
+    {
+      "id": 36,
+      "name": "History",
+      "image": "https://i.imgur.com/PaDWdXU.jpg"
+    },
+    {
+      "id": 27,
+      "name": "Horror",
+      "image": "https://i.imgur.com/jwSGRZi.jpg"
+    },
+    {
+      "id": 10402,
+      "name": "Music",
+      "image": "https://i.imgur.com/dUgqyAC.jpg"
+    },
+    {
+      "id": 9648,
+      "name": "Mystery",
+      "image": "https://i.imgur.com/C3FwR2d.jpg"
+    },
+    {
+      "id": 10749,
+      "name": "Romance",
+      "image": "https://i.imgur.com/7Emxumq.jpg"
+    },
+    {
+      "id": 878,
+      "name": "Science Fiction",
+      "image": "https://i.imgur.com/Ucws3z6.jpg"
+    },
+    {
+      "id": 10770,
+      "name": "TV Movie",
+      "image": "https://i.imgur.com/3s1wber.jpg"
+    },
+    {
+      "id": 53,
+      "name": "Thriller",
+      "image": "https://i.imgur.com/rtFWjL0.jpg"
+    },
+    {
+      "id": 10752,
+      "name": "War",
+      "image": "https://i.imgur.com/nkkJ7iL.jpg"
+    },
+    {
+      "id": 37,
+      "name": "Western",
+      "image": "https://i.imgur.com/Ktzmeqo.jpg"
+    }
+  ]
+}
