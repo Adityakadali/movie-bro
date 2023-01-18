@@ -1,19 +1,21 @@
-import { Link } from "react-router-dom";
+const MovieCard = ({ movie }) => {
+  const { VITE_TMDB_IMAGEURI: posterURI } = import.meta.env;
 
-const MovieCard = ({ genre }) => {
   return (
-    <Link
-      className="relative cursor-pointer overflow-hidden rounded shadow transition ease-in-out
-                hover:scale-105 hover:transition hover:ease-in-out"
-      to={`genres/${genre.id}`}
-    >
-      <img className="w-40" src={genre.image} alt={genre.name} />
-      <div className="absolute inset-0 grid place-content-center bg-slate-900/60">
-        <p className="text-center font-mono text-xl font-bold text-slate-100">
-          {genre.name}
-        </p>
+    <div className="w-32">
+      <div className="overflow-hidden rounded">
+        <img
+          className="w-full"
+          src={`${posterURI}${movie.poster_path}`}
+          alt=""
+        />
       </div>
-    </Link>
+      <p className="text-white">
+        Rating: {movie.vote_average}
+        <span className="text-sm">⭐</span>
+      </p>
+      <p className="font-semibold text-white">{movie.original_title}</p>
+    </div>
   );
 };
 

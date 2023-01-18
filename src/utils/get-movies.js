@@ -1,6 +1,7 @@
 import axios from "axios";
-export const getMovies = async (genreID) => {
-  const { VITE_TMDB_API } = await import.meta.env;
+export const getMovies = async (genreID, page) => {
+  const { VITE_TMDB_API } = import.meta.env;
+  const pageNumber = typeof page !== "undefined" ? page : 1;
   const { data } = await axios.get(
     "https://api.themoviedb.org/3/discover/movie",
     {
@@ -8,8 +9,9 @@ export const getMovies = async (genreID) => {
         api_key: VITE_TMDB_API,
         with_genres: genreID,
         with_original_language: "en",
+        page: pageNumber,
       },
     }
   );
-  return data;
+  return { data, genreID };
 };
