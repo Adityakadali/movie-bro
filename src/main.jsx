@@ -6,14 +6,27 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 // Error Pages
 import ErrorPage from "./error-page";
 // routes
+import Root from "./routes/root";
 import Home from "./routes/home";
+import Movies, { loader as movieLoader } from "./routes/movies";
 
 // router
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: <Root />,
     errorElement: <ErrorPage />,
+    children: [
+      {
+        index: true,
+        element: <Home />,
+      },
+      {
+        path: "genres/:genreID",
+        loader: movieLoader,
+        element: <Movies />,
+      },
+    ],
   },
 ]);
 ReactDOM.createRoot(document.getElementById("root")).render(
