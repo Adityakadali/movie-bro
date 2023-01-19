@@ -10,11 +10,11 @@ const MovieCard = ({ movie }) => {
           alt=""
         />
       </div>
-      <p className="text-white">
-        Rating: {movie.vote_average}
-        <span className="text-sm">⭐</span>
-      </p>
-      <p className="font-semibold text-white">{movie.original_title}</p>
+      <div className="px-2">
+        <p className="mt-2 font-semibold text-slate-50">
+          {movie.vote_average} / 10
+        </p>
+      </div>
     </div>
   );
 };
